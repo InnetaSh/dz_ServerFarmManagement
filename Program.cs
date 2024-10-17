@@ -187,7 +187,8 @@ public  class TaskFunctions
                     throw new Exception("Ошибка в обрботкие клиентского запроса.");
                 }
                 var endTimeTotal = DateTime.Now;
-                var dateFull = endTimeTotal.Subtract(startTimeTotal).TotalSeconds;                Console.WriteLine($"Обрботка клиентского запроса: завершена за {dateFull} секунд");
+                var dateFull = endTimeTotal.Subtract(startTimeTotal).TotalSeconds;               
+                Console.WriteLine($"Обрботка клиентского запроса: завершена за {dateFull} секунд");
             }
             catch (OperationCanceledException)
             {
